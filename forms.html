@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+Creating a multimedia-rich webpage with audio and video elements
+Designing a registration form with validation attributes 
+Embed an image
+Embed a table
+Create a list
+<head>
+ <meta charset="UTF-8">   
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Forms</title></head>
+<body>
+    <h2>Audio and Video Elements</h2>
+    <h3>Video Embed</h3>
+    <video controls width="640" height="360" control poster="pau.webp">
+        <source src="123.mp4" type="video/mp4" >Your Browser does not support the video element.
+    </video>
+    <h3>Audio Embed</h3>
+    <audio controls >
+        <source src="ANNE.mp3" type="audio/mp3">Your Browser does not support the audio element.
+    </audio>
+    <br><br>
+    <h3>Image Embed</h3>
+    <img src="pau.webp" alt="Image of a person playing a guitar" height="30%" width="60%">
+    <br><br>
+    <img src="https://www.pexels.com/photo/modern-portrait-in-moroccan-architectural-setting-30767037/ "alt="Photo of a Man" height="10px" width="10px">
+    <h3>Lists Ordered Lists</h3>
+    <ol type="I">
+        <li>Paul Wainaina</li>
+        <li>Esther Nyambura</li>
+        <li>Alpha Shalom</li>
+    </ol>
+    <h3>Unordered List</h3>
+    <ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Guava</li>
+    </ul>
+    
+<h3>Desciption Lists</h3>
+<dl><dt>HTML</dt>
+<dd>Hypertext Markup Language</dd></dl>
+<br><br>
+<h3>Embedding a Table</h3>
+<table border="1">
+    <thead><th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th></thead>
+    <tbody><tr><td>Alice</td>
+                <td>20 4th Street</td>
+                <td>+1234566</td>
+                <td>alic@gmail.com</td></tr>
+            <tr><td>Paul</td>
+                <td>27th Street</td>
+                <td>+254990909</td>
+                <td>paul@gmail.com</td></tr>
+            <tr><td>Ess</td>
+                <td>23 rd Street</td>
+                <td>+25478989898</td>
+                <td>ess@gmail.com</td></tr>
+            <tr><td>Kevin</td>
+                <td>23 rd Street</td>
+                <td>+25478989898</td>
+                <td>Kev@gmail.com</td></tr>
+                <tr><td>Tess</td>
+                <td>23 rd Street</td>
+                <td>+25478989898</td>
+                <td>tess@gmail.com</td></tr></tbody>
+    <tfoot><tr><td colspan="4">Total Records :4</td></tr></tfoot>
+</table>
+<h3>Embedding Forms</h3>
+<form action="form.php">
+    <fieldset>
+    <legend ><b>Personal Information</b></legend>
+    <label for="fname">Enter Your Full name:</label>
+    <input type="text" name="fname" placeholder="Paul Wainaina" required><br>
+    <label for="email">Enter your Email:</label>
+    <input type="text" name="email" required placeholder="example@gmail.com"><br>
+    <label for="password">Enter Your Password:</label>
+    <input type="text" name="password" id="password" required><br>
+    <label for="date">Select the date:</label>
+    <input type="date" name="date" id="date"></fieldset>
+    <fieldset><legend>Preferences</legend>
+    <p>Select Your Favorite color:</p>
+        <input type="radio" id="red" name="color" value="red" >
+        <label for="red">Red</label>
+        <input type="radio" id="blue" name="color" value="blue">
+        <label for="blue">Blue</label>
+        <input type="radio" name="green" id="color" value="green">
+        <label for="green">Green</label>
+    </fieldset>
+    <fieldset><legend>Select Cars:</legend>
+    <select name="cars" id="cars">
+        <option value="audi">Audi</option>
+        <option value="volvo">Volvo</option>
+        <option value="rangerover">Rangerrover</option>
+    </select></fieldset>
+    <fieldset><legend>Favorite Fruits:</legend>
+    <input type="checkbox" name="fruit" id="apple">
+    <label for="apple">Apple</label>
+    <input type="checkbox" name="fruit" id="mango">
+    <label for="mango">Mango</label>
+    <input type="checkbox" name="fruit" id="Banana">
+    <label for="banana">Banana</label><br>
+    <label for="comments">Comments</label>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea></fieldset>
+    <input type="submit" value="Submit">
+    <button type="reset">Reset</button>
+    <button type="button">Click Me</button>
+
+</form>
+</body>
+</html>
